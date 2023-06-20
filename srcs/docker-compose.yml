@@ -1,0 +1,16 @@
+version: '' #choisir la version
+
+services:
+  nginx:
+    container_name: nginx
+    build: ./requirements/nginx
+    ports:
+      -443:443
+
+  mariadb:
+    container_name: mariadb
+    build: ./requirements/mariadb
+
+  wordpress:
+    container_name: wordpress
+    build: ./requirements/wordpress

@@ -1,0 +1,9 @@
+Dockerfile always begibs with a From instruction
+
+The CMD instruction specifies which executable is run when a container is created using your image and provides optional arguments.
+
+commands a faire:
+
+* docker build -t hello . //creer l'image
+
+* docker run --rm hello
