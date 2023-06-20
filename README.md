@@ -29,17 +29,26 @@ Docker et Kubernetes:
    ° Registries (Images are stored in a registry)
 
 
-Your typical Docker server would look like this — a host for many containers:
+Your t
+ypical Docker server would look like this — a host for many containers:
 
-  //schéma
-  //schéma 2
+  ![Screenshot 2023-06-20 at 16-12-58 Getting started with Docker and Kubernetes A beginners guide](https://github.com/CassandraLct/Inception/assets/90134090/2661de83-3ae5-4338-8e58-083cba09204e)
+  
+  ![Screenshot 2023-06-20 at 16-14-47 Getting started with Docker and Kubernetes A beginners guide](https://github.com/CassandraLct/Inception/assets/90134090/7da0b6ae-e26b-4288-a70e-944b38953bb9)
 
+ 
   *test pour voir si Docker bien installer:
     docker run hello-world
 
 Creating first Docker images:
 
-  //schéma
+  ![Screenshot 2023-06-20 at 16-23-27 Getting started with Docker and Kubernetes A beginners guide](https://github.com/CassandraLct/Inception/assets/90134090/1ca59c83-7043-4816-82be-88abf1db8eca)
+
   A Docker image is created using the docker build command and a Dockerfile file
   
     *Dockerfile: contains instructions on how theimage should be built
+
+
+   schéma du sujet:
+
+   ![Screenshot 2023-06-20 at 16-27-18 fr subject pdf](https://github.com/CassandraLct/Inception/assets/90134090/d142d4a0-e9b2-4968-8438-46b58a0256bb)
