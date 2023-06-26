@@ -56,5 +56,9 @@ Docker et Kubernetes:
 
 #Version de la vm:
 
-	Modele choisi : Debian Buster(10)
+	Modele choisi : Debian Buster(10) amd64, interface graphique: gnome
+	Lien : 
+#	https://www.debian.org/releases/buster/debian-installer/
 
+Nginx est dependant de wordpress et wordpress est dependant de mariadb.
+Mariadb est donc creer en premier

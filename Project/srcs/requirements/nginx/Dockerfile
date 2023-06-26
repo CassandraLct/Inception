@@ -1,1 +1,3 @@
-FROM baseImage
+FROM debian:buster
+
+RUN command
