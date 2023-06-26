@@ -8,6 +8,8 @@ Utilisation de Docker et d'image Docker
 # https://github.com/llescure/42_Inception
   -> github twagger (set up & bonus)
 # https://github.com/twagger/inception
+	-> github jmbcorp
+# https://github.com/jmbcorp999/Inception
   -> Docker doc
 # https://www.educative.io/blog/docker-compose-tutorial
 # https://www.educative.io/blog/docker-kubernetes-beginners-guide
