@@ -1,20 +1,32 @@
-version: '' #choisir la version
+version: '3' #choisir la version
+
+networks:
+    inception:
+
+volumes:
+  database:
 
 services:
   nginx:
     container_name: nginx
     build: ./requirements/nginx
     ports:
-      -443:443
+      - 443:443
     depends_on:
       - wordpress
+    networks:
+      - inception
 
   mariadb:
     container_name: mariadb
     build: ./requirements/mariadb
+    networks:
+      - inception
 
   wordpress:
     container_name: wordpress
     build: ./requirements/wordpress
     depends_on:
       - mariadb
+    networks:
+      - inception
