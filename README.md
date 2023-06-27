@@ -62,3 +62,15 @@ Docker et Kubernetes:
 
 Nginx est dependant de wordpress et wordpress est dependant de mariadb.
 Mariadb est donc creer en premier
+
+commande utile pour tester docker:
+ . nginx:
+docker build -t mynginx . : creer et start l'image ; -t permet de nommer l'image
+docker images : affiche les images creer
+docker run -d my_nginx : lance le container en arriere plan
+docker rmi -f (id Image ou nom) : supprimer l'image
+docker ps: permet de savoir si le comtainer tourne
+which nginx : montre si nginx est bien installé
+nginx : affiche ce qu'essaie de faire nginx
+creation du script
+
