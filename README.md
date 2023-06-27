@@ -72,5 +72,6 @@ docker rmi -f (id Image ou nom) : supprimer l'image
 docker ps: permet de savoir si le comtainer tourne
 which nginx : montre si nginx est bien installé
 nginx : affiche ce qu'essaie de faire nginx
-creation du script
+creation du script pour creer tous les fichier
+commande pour se connecter via ssh: ssh root@localhost -p 42
 
