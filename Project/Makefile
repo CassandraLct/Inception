@@ -1,10 +1,29 @@
+name = Inception
 all:
-	@docker compose -f ./scrs/docker-compose.yml up -d --build
+	@printf "Launch configuration ${name}...\n"
+	@docker-compose -f ./srcs/docker-compose.yml up -d
+
+build:
+	@printf "Building configuration ${name}...\n"
+	@docker-compose -f ./srcs/docker-compose.yml up -d --build
+
 down:
-#eteindre le docker 
-re:
-	@docker compose -f ./scrs/docker-compose.yml up -d --build
+	@printf "Stopping configuration ${name}...\n"
+	@docker-compose -f ./srcs/docker-compose.yml down
 
-clean:
+re:	down
+	@printf "Rebuild configuration ${name}...\n"
+	@docker-compose -f ./srcs/docker-compose.yml up -d --build
 
-.PHONY: all re down clean 
+clean: down
+	@printf "Cleaning configuration ${name}...\n"
+	@docker system prune -a
+
+fclean:
+	@printf "Total clean of all configurations docker\n"
+	@docker stop $$(docker ps -qa)
+	@docker system prune --all --force --volumes
+	@docker network prune --force
+	@docker volume prune --force
+
+.PHONY	: all build down re clean fclean

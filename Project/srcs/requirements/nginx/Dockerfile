@@ -1,5 +1,7 @@
-FROM debian:buster
+FROM alpine:3.17
 
-RUN command
+RUN	apk update && apk upgrade && apk add --no-cache nginx
 
 EXPOSE 443
+
+CMD ["nginx", "-g", "daemon off;"]

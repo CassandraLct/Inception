@@ -74,4 +74,11 @@ which nginx : montre si nginx est bien installé
 nginx : affiche ce qu'essaie de faire nginx
 creation du script pour creer tous les fichier
 commande pour se connecter via ssh: ssh root@localhost -p 42
+commande pour mysql: 
+-> aller dans mariadb: docker exec -it mariadb sh
+puis : mysqldump -u 'username' -p 'databasename' > filename.sql
+puis : mysqldump -u root -p wp_database > ~/wpdata.sql
+desinstaller puis reinstaller docker compose :
+	curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+puis la commande : chmod +x /usr/local/bin/docker
 
